@@ -25,7 +25,7 @@ resource "aws_instance" "instance_using_terraform" {
     instance_type = "t3.micro"
     vpc_security_group_ids = [aws_security_group.allow_ssh_terraform.id]
     tags = {
-        Name = "terraform-user"
+        Name = "prometheus-server"
     }
 
 }
